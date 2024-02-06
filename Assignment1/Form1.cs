@@ -59,13 +59,11 @@ namespace Assignment1
                             inter.Show();
                             inter.Location = new Point(inter.Location.X + inter.Width * i, src.Location.Y + src.Width * 2);
                         }*/
-            for (int i = 0; i < final.Count; i++)
-            {
-                Intermediate inter = new Intermediate(final[i]);
-                inter.MdiParent = this;
-                inter.Show();
-                inter.Location = new Point(inter.Location.X + inter.Width * i, src.Location.Y + src.Width);
-            }
+            Intermediate inter = new Intermediate(final);
+            inter.MdiParent = this;
+            inter.Show();
+            inter.Location = new Point(inter.Location.X, src.Location.Y + src.Width);
+            
             //morph.printLines();
             //morph.warpImage();
             //Thread.Sleep(1);
