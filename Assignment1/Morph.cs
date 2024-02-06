@@ -184,7 +184,7 @@ namespace Assignment1
                 {
                     for (int y = 0; y < a[i].Height; y++)
                     {
-                        double t = (double)(i+1) / (a.Count);
+                        double t = (double)(i) / (a.Count-1);
                         Color colorA = a[i].GetPixel(x, y);
                         Color colorB = b[i].GetPixel(x, y);
                         int newR = (int)Math.Round((1 - t) * colorA.R + t * colorB.R);
